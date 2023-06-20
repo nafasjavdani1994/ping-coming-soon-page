@@ -73,17 +73,23 @@ nav .heading-text {
 .input-group {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   gap: 1.5em;
 }
 
-.email {
+.email-field {
+  min-height: 100%;
   width: 27%;
+}
+
+.email {
+  width: 100%;
   border: 1px solid var(--clr-Pale-Blue);
   outline: 0;
   background: none;
   border-radius: 30px;
   padding: 1em 6em 1em 1.5em;
+  margin-bottom: 10px;
 }
 
 ::placeholder {
@@ -91,6 +97,7 @@ nav .heading-text {
 }
 
 .message {
+  width: 100%;
   font-size: 1.1rem;
   font-weight: 600;
   font-style: italic;
@@ -165,8 +172,12 @@ main .banner {
     font-size: 1.4rem;
   }
   .input-group {
+    align-items: center;
     flex-direction: column;
     gap: 1em;
+  }
+  .email-field {
+    width: 100%;
   }
   .email {
     width: 100%;
